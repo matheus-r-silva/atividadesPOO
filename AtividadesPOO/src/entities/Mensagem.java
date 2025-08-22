@@ -25,16 +25,17 @@ public class Mensagem {
 	public String getTexto() {
 		return texto;
 	}
-
+//permite que os programadores personalizem e adaptem o comportamento das classes de forma mais flexível e eficiente.
 	@Override
 	public String toString() {
 		return usuario + " para " + usuario + ": " + texto;
 	}
-
+// cria a troca de mensagem
 	public static void criarMensagem() {
+		// guarda os dois contatos criados
 		Contato[] usuarios = new Contato[2];
 		Mensagem[] txt = new Mensagem[2];
-
+//cadastrar 2 copntatos e evita repetir o codigo
 		for (int i = 0; i < 2; i++) {
 			System.out.println("Informe o nome do " + (i + 1) + " contato");
 			String nome = sc.nextLine();
@@ -42,13 +43,13 @@ public class Mensagem {
 			String numero = sc.nextLine();
 			usuarios[i] = new Contato(nome, numero);
 		}
-
+// cada contato descreve uma mensagem
 		for (int i = 0; i < 2; i++) {
 			System.out.println("Digite a " + (i + 1) + " mensagem");
 			String texto = sc.nextLine();
 			txt[i] = new Mensagem(usuarios[i], texto);
 		}
-
+// para imprimir as mensagens
 		System.out.println(usuarios[0] + " para " + usuarios[1] + ": " + txt[0].texto);
 		System.out.println();
 		System.out.println(usuarios[1] + " para " + usuarios[0] + ": " + txt[1].texto);
@@ -62,7 +63,7 @@ public class Mensagem {
 //		}
 
 	}
-	
+// metodo para rodar o programa	
 	public static void main(String[] args) {
 		criarMensagem();
 	}
