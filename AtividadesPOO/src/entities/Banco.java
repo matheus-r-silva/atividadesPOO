@@ -10,7 +10,7 @@ public class Banco {
 	public Banco() {
 
 	}
-
+ 	
 	public Banco(int numeroConta, String titular, double carteira) {
 		this.numeroConta = numeroConta;
 		this.titular = titular;
@@ -53,7 +53,8 @@ public class Banco {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
+		//Banco cliente = new Banco(2321321, "Fulano", 600.0);
+		
 		System.out.println("----BANCO APP BETA---\n");
 		System.out.print("Insira o numero do titular: ");
 		int numero = sc.nextInt();
