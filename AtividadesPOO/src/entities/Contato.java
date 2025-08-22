@@ -13,11 +13,11 @@ public class Contato  {
 		this.nome = nome;
 		this.numero = numero;
 	}
-// get retorna que devolve o valor de um atributo privado da classe
+// get retorna. que devolve o valor de um atributo privado da classe
 	public String getNome() {
 		return nome;
 	}
-// get retorna que devolve o valor de um atributo privado da classe
+// get retorna. que devolve o valor de um atributo privado da classe
 	public String getNumero() {
 		return numero;
 	}
