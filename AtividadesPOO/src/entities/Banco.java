@@ -70,6 +70,7 @@ public class Banco {
 
 		System.out.print("Novo nome: ");
 		String novoNome = sc.nextLine();
+		//set altera
 		cliente.setTitular(novoNome);
 		System.out.println(cliente);
 
