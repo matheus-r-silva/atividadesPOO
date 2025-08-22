@@ -1,6 +1,6 @@
-package entity;
 
-public class Contato {
+
+public class Contato  {
 	private String nome;
 	private String numero;
 	
@@ -18,4 +18,11 @@ public class Contato {
 	public String getNumero() {
 		return numero;
 	}
+
+	@Override
+	public String toString() {
+		return nome;
+	}
+	
+	
 }
