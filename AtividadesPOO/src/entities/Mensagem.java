@@ -25,7 +25,7 @@ public class Mensagem {
 	public String getTexto() {
 		return texto;
 	}
-//permite que os programadores personalizem e adaptem o comportamento das classes de forma mais flexível e eficiente.
+//permite que adaptem forma mais flexível e eficiente. classe
 	@Override
 	public String toString() {
 		return usuario + " para " + usuario + ": " + texto;
@@ -49,7 +49,7 @@ public class Mensagem {
 			String texto = sc.nextLine();
 			txt[i] = new Mensagem(usuarios[i], texto);
 		}
-// para imprimir as mensagens
+// imprimir as mensagens
 		System.out.println(usuarios[0] + " para " + usuarios[1] + ": " + txt[0].texto);
 		System.out.println();
 		System.out.println(usuarios[1] + " para " + usuarios[0] + ": " + txt[1].texto);
