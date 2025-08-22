@@ -13,15 +13,15 @@ public class Contato  {
 		this.nome = nome;
 		this.numero = numero;
 	}
-
+// get retorna que devolve o valor de um atributo privado da classe
 	public String getNome() {
 		return nome;
 	}
-
+// get retorna que devolve o valor de um atributo privado da classe
 	public String getNumero() {
 		return numero;
 	}
-
+//permite que os programadores personalizem e adaptem o comportamento das classes de forma mais flexível e eficiente.
 	@Override
 	public String toString() {
 		return nome;
