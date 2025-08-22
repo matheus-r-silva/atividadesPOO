@@ -3,19 +3,21 @@ package entity;
 import java.util.Scanner;
 
 public class Mensagem {
+	// scanner le entradas do usuario no console
 	public static Scanner sc = new Scanner(System.in);
 
 	Contato usuario;
 	String texto;
 
-	public Mensagem() {
+	public Mensagem() { //construtor vazio permite criar objt sem passar valores de cara
+		
 	}
-
+// construtor com parametro cria a mensagem direta
 	public Mensagem(Contato usuario, String texto) {
 		this.usuario = usuario;
 		this.texto = texto;
 	}
-
+//
 	public Contato getUsuario() {
 		return usuario;
 	}
