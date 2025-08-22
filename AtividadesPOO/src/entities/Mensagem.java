@@ -1,4 +1,4 @@
-package entity;
+ os valores direto de forma controladapackage entity;
 
 import java.util.Scanner;
 
@@ -17,11 +17,11 @@ public class Mensagem {
 		this.usuario = usuario;
 		this.texto = texto;
 	}
-//
+//acessa direto de forma controlada os valores
 	public Contato getUsuario() {
 		return usuario;
 	}
-
+//acessa direto de forma controlada os valores
 	public String getTexto() {
 		return texto;
 	}
